@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Resource - Delete</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <div>
+        <h1>Estas seguro de la eliminacion?</h1>
+        <form method="POST" action="/clientela/delete/{{id}}">
+            <div>
+                <fieldset>
+                    <label class="EtiquetaQuestionario" form="confirmacio"> Confirmar</label>
+                    <input type="checkbox" name="confirmacio" id="confirmacio" value="confirmacio"/> 
+                </fieldset>
+            </div>
+
+            <div>
+                <button type="submit">confirmar</button>
+       
+            </div>
+        </form>
+    </div>
+</body>
+</html>

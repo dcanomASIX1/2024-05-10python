@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Resource - Read</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Resource {{ resource['id'] }}</h1>
+        <table>
+            <tr>
+                <td>Nom</td>
+                <td>{{ resource['nom'] }}</td>
+            </tr>
+            <tr>
+                <td>Cognom1</td>
+                <td>{{ resource['cognom1'] }}</td>
+            </tr>
+            <tr>
+                <td>Cognom2</td>
+                <td>{{ resource['cognom2'] }}</td>
+            </tr>
+            <tr>
+                <td>Telefon</td>
+                <td>{{ resource['telefon'] }}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

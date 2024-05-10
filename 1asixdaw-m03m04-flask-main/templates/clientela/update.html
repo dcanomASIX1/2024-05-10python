@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Resource - Update</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <p>Holamundo</p>
+        <div class="container">
+            <h1>Update resource</h1>
+            <form method="POST" action="/clientela/update/{{id}}">
+                <div class="form-row">
+                    <label for="field2">Nom:</label>
+                    <input type="text" name="nom" required value="{{ data['nom'] }}"></input>    
+                </div>
+                <div class="form-row">
+                    <label for="field3">Cognom1:</label>
+                    <input type="text" name="cognom1" placeholder="(optional)" value="{{ data['cognom1'] }}"></input>
+                </div>
+                <div class="form-row">
+                    <label for="field3">Cognom2:</label>
+                    <input type="text" name="cognom2" placeholder="(optional)" value="{{ data['cognom2'] }}"></input>
+                </div>
+                <div class="form-row">
+                    <label for="field3">Telefon:</label>
+                    <input type="text" name="telefon" placeholder="(optional)" value="{{ data['telefon'] }}"></input>
+                </div>
+                <div>
+                    <button type="submit">Create</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
